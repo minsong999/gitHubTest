@@ -1,0 +1,43 @@
+﻿<div><h1>1. What is CallStack?</h1></div>
+
+<script>
+    function three() {
+        console.log("I love js")
+    }
+    function two() {
+        three();
+    }
+    function one() {
+        two();
+    }
+    function zero() {
+        one();
+    }
+    zero();
+</script>
+
+<div>
+    function three() {              <br>
+    console.log("I love js")    <br>
+    }                               <br>
+    function two() {                <br>
+    three();                    <br>
+    }                               <br>
+    function one() {                <br>
+    two();                      <br>
+    }                               <br>
+    function zero() {               <br>
+    one();                      <br>
+    }                               <br>
+    zero();
+</div>
+
+<br />
+
+<div>실행순서 zero() -> one() -> two() -> three() -> console.log("I love js")</div>
+<div>자바스크립트는 콜스택이라는 스택에 쌓이고 순서대로 실행된다.</div>
+<div>자바스크립트는 return되거나 실행이 완료되면 끝난다. -> 즉 리턴이 이루어지면 그 뒤 내용은 실행되지 않는다.</div>
+<div>자바스크립트는 에러가 일어나면 에러 이전에 있었던  에러 시간 역순으로 그 전이 이루어진 모든 콜스택을 알려준다.</div>
+
+
+
