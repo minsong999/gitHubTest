@@ -15,5 +15,10 @@ namespace gitHubTest.Controllers
         {
             return View();
         }
+
+        public IActionResult PrimitiveTypes()
+        {
+            return View();
+        }
     }
 }

@@ -17,6 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\ConceptJavascript\PrimitiveTypes.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\ConceptJavascript\CallStack.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
