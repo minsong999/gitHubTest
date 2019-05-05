@@ -20,5 +20,10 @@ namespace gitHubTest.Controllers
         {
             return View();
         }
+
+        public IActionResult ValueTypesAndReferenceType()
+        {
+            return View();
+        }
     }
 }
