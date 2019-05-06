@@ -1,0 +1,15 @@
+﻿<div><h1>4. typeCoericion(형변환)</h1></div>
+<div></div>
+<div>console.log(66 + true); -> 67</div>
+<div>console.log(66 + "true"); -> 66true -> loaded operator라 부름</div>
+<div>console.log(10 + 66 + "true"); -> 77true</div>
+
+<div> == 를 쓰면 number, boolean으로 형변환이 이루어진다.</div>
+<div> ===를 쓰면 type coercion이 일어나지 않는다. </div>
+<div>예) console.log("1" == 1); -> true</div>
+<div>console.log("1" === 1); -> false</div>
+
+<div>console.log("1" == true); -> true</div>
+<div>console.log("true" == true); -> false</div>
+
+-> ===를 사용하여 타입 형변환을 시키지 않아 보다 엄격한 프로그래밍이 가능하다.

@@ -25,5 +25,11 @@ namespace gitHubTest.Controllers
         {
             return View();
         }
+
+        public IActionResult typeCoericion()
+        {
+            return View();
+        }
+        
     }
 }
