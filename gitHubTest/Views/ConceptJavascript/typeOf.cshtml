@@ -1,0 +1,13 @@
+﻿<div><h1>5. typeof</h1></div>
+
+<div>
+    <div>console.log(typeof(true));   </div>
+    <div>console.log(typeof true);    </div>
+    <div>                             </div>
+    <div>console.log(typeof null); -> WTF 버그 존재함 -> instance of 사용</div>
+    <div>console.log({}instance of Array)  ->object, array에만 작동함(즉 null때는 작동안됨)</div>
+    <div>console.log({}instance of string) -> 작동하지 않음</div>
+</div>
+
+<div>primitive type을 체크할 떄는 typeof를 사용하고 Array를 체크할 떄는 instance of를 사용해야 한다.</div>
+<div>이유는 typeof null -> object가 나오는 WTF버그 때문이다.</div>

@@ -30,6 +30,10 @@ namespace gitHubTest.Controllers
         {
             return View();
         }
-        
+
+        public IActionResult typeOf()
+        {
+            return View();
+        }
     }
 }
