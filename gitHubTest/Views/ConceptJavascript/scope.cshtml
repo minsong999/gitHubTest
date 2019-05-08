@@ -1,0 +1,41 @@
+﻿<div><h1>6. scope</h1></div>
+
+<div>
+    <div>if(true){                                  </div>
+    <div>const hello = "hi!";                       </div>
+    <div>console.log(hello)                         </div>
+    <div>}  -> hi 출력                              </div>
+    <div>console.log(hello); -> hello is not defined</div>
+</div>
+<br />
+<div>
+    <div>const h = "hello"; </div>
+    <div>                   </div>
+    <div>function a(){      </div>
+    <div>    console.log(h) </div>
+    <div>    const b = "b"  </div>
+    <div>}                  </div>
+    <div>                   </div>
+    <div>a()                </div>
+    <div>console.log(b);    </div>
+</div>
+<br />
+<div>
+    <div>만약에 다른 api에 값을 전달해야 한다면 아래와 같은 방식으로 쓰면 된다.</div>
+    <div>let hello;          </div>
+    <div>if(ture){           </div>
+    <div>    hello = "hello";</div>
+    <div>}                   </div>
+    <div>console.log(hello); </div> 
+</div>
+<br />
+<div>
+    <div>부모 버블에서 자녀 버블로 접근할 수 없다.           </div>
+    <div>그 반대로 부모버블에서 자녀버블로 접근 가능하다.    </div>
+    <div>var는 전역변수가 오염될 가능성이 항상 존재한다.     </div>
+    <div>let은 값을 할당하기전에 변수가 선언 되어있어야 한다.</div>
+    <div>let과 const는 var와 다르게 변수 재선언 불가능이다.  </div>
+    <div>let은 변수에 재할당이 가능하지만,                   </div>
+    <div>const는 변수 재선언, 재할당 모두 불가능하다.        </div>
+    <div>const는 선언과 동시에 값을 할당해야 한다.           </div>
+</div>

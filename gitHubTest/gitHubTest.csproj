@@ -17,6 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\ConceptJavascript\scope.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\ConceptJavascript\typeOf.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

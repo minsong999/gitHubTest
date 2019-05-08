@@ -35,5 +35,11 @@ namespace gitHubTest.Controllers
         {
             return View();
         }
+
+        public IActionResult scope()
+        {
+            return View();
+        }
+
     }
 }
