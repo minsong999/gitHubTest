@@ -1,0 +1,34 @@
+﻿<div><h1>7. Expression & Statement</h1></div>
+
+<div>
+    <div>Expression이란?                          </div>
+    <div>뭔가 value가 되는 것 즉 리턴이 가능 한 것</div>
+    <div>funtion add(a,b){return a+b;}</div>
+</div>
+<br />
+<div>
+    <div>Statement이란?                          </div>
+    <div>명령 or 지시</div>
+    <div>const thing = if(true){}    -> error</div>
+    <div>=은 Statement(if, else, else if, for, while...)를 핸들링할 수 없다.</div>
+</div>
+<br />
+<div>
+    <div>declaration이란?                          </div>
+    <div>const awesome= add(1,5);                   </div>
+    <div>                                           </div>
+    <div>function add(a,b){                         </div>
+    <div>    return a + b;                          </div>
+    <div>}                                          </div>
+    <div>                                           </div>
+    <div>console.log(awesome)         ->6 출력      </div>
+    <div>앞에 선언되지 않은 expression을 호출해도 자바스크립트가 호이스팅을 통해 declaration 위치를 최상단으로 바꿔준다.</div>
+</div>
+<br />
+
+<div>
+    <div>declaration이란?                           </div>
+    <div>const awesome= add(1,5);                   </div>
+    <div>const add = (a, b) => a + b;               </div>
+    <div>console.log(awesome)          ->error      </div>
+</div>
