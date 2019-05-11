@@ -43,6 +43,9 @@
     <Content Update="Views\ConceptJavascript\CallStack.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Views\cSharp\dataType.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\cSharp\helloCSharp.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
