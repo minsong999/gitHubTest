@@ -31,6 +31,23 @@ namespace gitHubTest.Controllers
             
             return View();
         }
-        
+
+        public IActionResult convert()
+        {
+            String Sum1 = "1";
+            int num = Convert.ToInt32(Sum1);       //문자 -> 숫자 변환
+            String num2 = Convert.ToString(num);   //숫자 -> 문자 변환
+
+            float num3 = 3.14f;
+            double num4 = 3.25;
+            int numPlusOne=Add(num, 1);
+            Console.WriteLine(numPlusOne);
+            return View();
+        }
+
+        public int Add(int num1, int num2)
+        {
+            return num1 + num2; 
+        }
     }
 }
