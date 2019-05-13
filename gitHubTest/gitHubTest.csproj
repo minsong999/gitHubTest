@@ -46,6 +46,9 @@
     <Content Update="Views\cSharp\convert.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Views\cSharp\ifAndValidation.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\cSharp\dataType.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

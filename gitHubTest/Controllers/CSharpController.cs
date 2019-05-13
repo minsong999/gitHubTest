@@ -49,5 +49,34 @@ namespace gitHubTest.Controllers
         {
             return num1 + num2; 
         }
+
+        public IActionResult ifAndValidation()
+        {
+            String abc = "";
+            if (abc == "") { }
+            if (String.IsNullOrWhiteSpace(abc)) { } //null, "", "빈 스페이스값만 있는지" 체크
+            if (String.IsNullOrEmpty(abc)) { } //null , "" 체크
+
+
+            int number = 1;
+            abc = "1";
+
+            Boolean blabla = true;
+            if (int.TryParse(abc, out number) == false) { //abc라는 스트링 값이 숫자로 변환이 가능하다면 number에 넣고 true를 리턴함
+                Console.WriteLine("문자 abc는 숫자로 변환할 수 없는 값입니다.");
+            }
+
+            if (blabla)
+            {
+                Console.WriteLine("blabla가 true이니까 실행");
+            }
+            else
+            {
+                Console.WriteLine("blabla가 false이니까 실행");
+            }
+
+            //값 비교 연산자 ==, !=, >, >=, ,< ,<= 
+            return View();
+        }
     }
 }
