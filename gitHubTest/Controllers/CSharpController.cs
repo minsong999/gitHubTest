@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace gitHubTest.Controllers
 {
     public class CSharpController : Controller
     {
+        
         public IActionResult Index()
         {
             return View();
@@ -28,7 +25,7 @@ namespace gitHubTest.Controllers
             string operator1 = "+";
             bool isCorrect = true;
 
-            
+
             return View();
         }
 
@@ -40,14 +37,14 @@ namespace gitHubTest.Controllers
 
             float num3 = 3.14f;
             double num4 = 3.25;
-            int numPlusOne=Add(num, 1);
+            int numPlusOne = Add(num, 1);
             Console.WriteLine(numPlusOne);
             return View();
         }
 
         public int Add(int num1, int num2)
         {
-            return num1 + num2; 
+            return num1 + num2;
         }
 
         public IActionResult ifAndValidation()
@@ -78,5 +75,20 @@ namespace gitHubTest.Controllers
             //값 비교 연산자 ==, !=, >, >=, ,< ,<= 
             return View();
         }
+
+        public IActionResult accessModifier()
+        {
+            //public
+            //private
+            //protected
+            //
+
+            Models.Cat myCat = new Models.Cat(13,"졸린고양이");
+
+            return View();
+        }
+
+
     }
+
 }
