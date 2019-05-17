@@ -1,0 +1,55 @@
+﻿<div><h1>8. IIFE & Modules</h1></div>
+
+<script>
+    (() => {
+        const secretUsers = ["minseong", "Lynn", "minA"];
+        console.log(secretUsers)
+    })()
+
+</script>
+
+<script type="module" src="/js/JavaScript1.js"></script>
+<script type="module" src="/js/JavaScript2.js"></script>
+<div>
+    <div>IIFE 란??</div>
+    <div>자기 자신을 부르는 함수를 통해 클라이언트가 variable에 영향을 끼치는 것을 막아주고 싶을 때 사용</div>
+    <div>(() => {                                           </div>
+    <div>const secretUsers = ["minseong", "Lynn", "minA"];  </div>
+    <div>console.log(secretUsers)                           </div>
+    <div>})()                                               </div>
+    <div></div>
+</div>
+<br />
+<div>
+    <div>
+        import, Export?
+    </div>
+    <div>
+        Modules을 브라우저에서 어떻게 합칠까?
+    </div>
+    <div>
+        let users = ["minsoeng", "dal", "minA"];
+    </div>
+    <div>
+        const addUSer = (user) => users = [...users, user];
+    </div>
+    <div>
+        const getUsers = () => users;
+    </div>
+    <div>
+        const deleteUSer = (user) => users = users.filter(aUser => aUser !== user);
+    </div>
+</div>
+<br />
+<div>
+    script type에 module을 붙이면 import, export된 모듈로써 사용할 수 있다. 
+</div>
+<br />
+
+<div>
+    IIFE는 <br />
+    (() => {            <br />
+        --your code--   <br />
+    })()                <br />
+    yourcode에 해당하는 부분을 클라이언트가 접근할 수 없게 한다.
+</div>
