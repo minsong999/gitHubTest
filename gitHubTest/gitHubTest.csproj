@@ -56,6 +56,9 @@
     <Content Update="Views\ConceptJavascript\CallStack.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Views\cSharp\cSharpDateTime.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\cSharp\accessModifier.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

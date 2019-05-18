@@ -88,6 +88,15 @@ namespace gitHubTest.Controllers
             return View();
         }
 
+        public IActionResult CSharpDateTime()
+        {
+            //prop + tab 을 하면 코드 getset 자동생성을 할 수 있다.
+            DateTime date = new DateTime(2016, 2, 28);
+            DateTime current = DateTime.Now; // 이코드가 실행 될 때의 시간
+
+            return View();
+        }
+
 
     }
 
