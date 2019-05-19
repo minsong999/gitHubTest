@@ -85,7 +85,7 @@ namespace gitHubTest.Controllers
 
             Models.Cat myCat = new Models.Cat(13,"졸린고양이");
 
-            return View();
+            return View(model: myCat);
         }
 
         public IActionResult CSharpDateTime()
@@ -97,7 +97,20 @@ namespace gitHubTest.Controllers
             return View();
         }
 
+        public IActionResult forAndWhile()
+        {
+            //if (A == B)
+            //{yourcode}
+            //else if
+            //{yourcode}
+            //else
+            //{yourcode}
 
+            //for(int i=0; i<=10; i++) {} i값 정의, 반복이 지속되는 조건, i값 변화식
+
+            //while(조건식){yourcode}
+
+            return View();
+        }
     }
-
 }
