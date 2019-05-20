@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\ConceptJavascriptController - 복사.cs" />
-    <Compile Remove="Controllers\HomeController - 복사.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -75,6 +74,12 @@
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Views\cSharp\helloCSharp.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Ie\protocolRelativeURL.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Ie\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>
