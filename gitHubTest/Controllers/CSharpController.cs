@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using Dapper;
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace gitHubTest.Controllers
@@ -110,6 +111,7 @@ namespace gitHubTest.Controllers
 
             //while(조건식){yourcode}
 
+            //Dapper는 프로젝트 우클릭 -> nuget 패키지 관리에서 dapper 검색후 다운로드하여 .cs 파일 상단에 using Dapper로 사용할 수 있다. 
             return View();
         }
     }
