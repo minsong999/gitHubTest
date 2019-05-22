@@ -112,6 +112,8 @@ namespace gitHubTest.Controllers
             //while(조건식){yourcode}
 
             //Dapper는 프로젝트 우클릭 -> nuget 패키지 관리에서 dapper 검색후 다운로드하여 .cs 파일 상단에 using Dapper로 사용할 수 있다. 
+            //회사 카페 수기 목록에 월급에서 공제되는 커피 값을 나 몰래 내 이름으로 결제한건 상당히 불쾌한 일이다. 오늘도 공부하고 커밋을 해야 하는 건 맞지만 오늘 하루는 봐주었으면 한다. 
+            //부끄러운 회사사람들 중 한명... 
             return View();
         }
     }
