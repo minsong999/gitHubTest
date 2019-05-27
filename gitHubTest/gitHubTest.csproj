@@ -77,6 +77,9 @@
     <Content Update="Views\cSharp\helloCSharp.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Views\DevelopmentRabbit\introudceASPNET.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\Ie\protocolRelativeURL.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
