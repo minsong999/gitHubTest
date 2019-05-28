@@ -18,5 +18,9 @@ namespace gitHubTest.Controllers
             return View();
         }
 
+        public IActionResult makeMVCCoreProject()
+        {
+            return View();
+        }
     }
 }

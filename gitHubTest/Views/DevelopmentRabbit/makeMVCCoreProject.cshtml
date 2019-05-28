@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contents</title>
+</head>
+<body>
+    <partial name="/Views/DevelopmentRabbit/Contents.cshtml"/>
+    <div>
+        <h2> 2. ASP.NET MVC Core 프로젝트 만들기</h2>
+    </div>
+    <div>
+        project.json -- nuget 패키지 관리(references -> 누겟 패키지 관리)
+        program.cs -- 솔루션 main 함수가 있음
+        appsettings.json -- db 커넥션, 로깅과 같은 민감자료 넣음
+        bundleconfig.json --
+        Startup.cs -- DI(의존성주입), ADD framework service, Identity, Session, Web API 미들웨어
+        
+        -- Startup.cs 에서     
+        routes.MapRoute(
+        name: "default",
+        template: "{controller=Home}/{action=Index}/{id?}"); -- 
+        --> controller/action 값으로 매핑 값이 없으면 domain/home/index로 진입
+
+        XXXcontroller 에 메소드명 YYY가 있으면
+        Views/XXX/YYY.cshtml 과 매칭됨
+
+        web.config -- iis 웹서버에서 세팅해줘야 하는 부분 세팅함(.net core에서는 건드리지 않음)
+        Properties/launchSettings.json -- port번호 바꿔줄 때 사용
+        References(종속성) -- 참조추가, NuGet 패키지 관리, Dependencies 관리
+        wwwroot -- css, images, js, lib 파일 관리
+
+
+
+        
+    </div>
+</body>
+</html>
