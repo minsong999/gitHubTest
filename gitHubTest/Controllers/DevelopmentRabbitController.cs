@@ -13,12 +13,17 @@ namespace gitHubTest.Controllers
             return View();
         }
 
-        public IActionResult introudceASPNET()
+        public IActionResult IntroudceASPNET()
         {
             return View();
         }
 
-        public IActionResult makeMVCCoreProject()
+        public IActionResult MakeMVCCoreProject()
+        {
+            return View();
+        }
+
+        public IActionResult UseLayout()
         {
             return View();
         }
