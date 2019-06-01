@@ -27,5 +27,10 @@ namespace gitHubTest.Controllers
         {
             return View();
         }
+
+        public IActionResult RazorSyntax()
+        {
+            return View();
+        }
     }
 }
