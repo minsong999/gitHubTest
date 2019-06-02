@@ -59,5 +59,10 @@ namespace gitHubTest.Controllers
             ViewData["hongUserNo"] = hongUser.userNo;
             return View();
         }
+
+        public IActionResult EntityFramework()
+        {
+            return View();
+        }
     }
 }

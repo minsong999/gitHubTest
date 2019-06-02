@@ -84,13 +84,13 @@
     <Content Update="Views\DevelopmentRabbit\RazorSyntax.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\DevelopmentRabbit\useLayout.cshtml">
+    <Content Update="Views\DevelopmentRabbit\UseLayout.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\DevelopmentRabbit\makeMVCCoreProject.cshtml">
+    <Content Update="Views\DevelopmentRabbit\MakeMVCCoreProject.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\DevelopmentRabbit\introudceASPNET.cshtml">
+    <Content Update="Views\DevelopmentRabbit\IntroudceASPNET.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Views\Ie\protocolRelativeURL.cshtml">
