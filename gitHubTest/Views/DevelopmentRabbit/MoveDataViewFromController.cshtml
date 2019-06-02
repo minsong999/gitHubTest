@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contents</title>
+</head>
+<body>
+    <partial name="/Views/DevelopmentRabbit/Contents.cshtml"/>
+    <div>
+        <h2> 5. MoveDataViewFromController</h2>
+    </div>
+    <div>
+        @*<div>#1 방식(View(Model))</div>
+        <div> 사용자 번호 : @Model.userNo</div>
+        <div> 사용자 이름 : @Model.userName</div>*@
+        @*<div>#2 방식(ViewBag.ViewBag에 담긴 객체명)</div>
+        <div>사용자 번호:@ViewBag.hongUser.userNo</div>
+        <div>사용자 이름:@ViewBag.hongUser.userNo</div>*@
+        <div>#3 방식(ViewData) -- 객체는 넘기지 못한다.</div>
+        <div>@ViewData["hongUserNo"]</div>
+        <div>@ViewData["hongUserName"]</div>
+    </div>
+</body>
+</html>

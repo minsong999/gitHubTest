@@ -78,6 +78,9 @@
     <Content Update="Views\cSharp\helloCSharp.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Views\DevelopmentRabbit\MoveDataViewFromController.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\DevelopmentRabbit\RazorSyntax.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
