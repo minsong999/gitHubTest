@@ -64,5 +64,10 @@ namespace gitHubTest.Controllers
         {
             return View();
         }
+
+        public IActionResult MakeDatabaseWithEntityFramework()
+        {
+            return View();
+        }
     }
 }
