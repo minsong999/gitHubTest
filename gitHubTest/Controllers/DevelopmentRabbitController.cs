@@ -43,8 +43,8 @@ namespace gitHubTest.Controllers
 
             var hongUser = new User
             {
-                userNo = 1,
-                userName = "홍길동"
+                UserNo = 1,
+                UserName = "홍길동"
             };
 
             //#1 방식(View(model);
@@ -55,8 +55,8 @@ namespace gitHubTest.Controllers
             //return View();
 
             //#3 방식
-            ViewData["hongUserName"] = hongUser.userName;
-            ViewData["hongUserNo"] = hongUser.userNo;
+            ViewData["hongUserName"] = hongUser.UserName;
+            ViewData["hongUserNo"] = hongUser.UserNo;
             return View();
         }
 
