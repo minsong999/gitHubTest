@@ -69,5 +69,10 @@ namespace gitHubTest.Controllers
         {
             return View();
         }
+
+        public IActionResult MakeSignUpAndLogin()
+        {
+            return View();
+        }
     }
 }

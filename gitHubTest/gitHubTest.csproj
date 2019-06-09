@@ -79,6 +79,9 @@
     <Content Update="Views\cSharp\helloCSharp.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Views\DevelopmentRabbit\MakeSignUpAndLogin.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\DevelopmentRabbit\MoveDataViewFromController.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
