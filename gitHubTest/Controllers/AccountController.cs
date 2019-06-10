@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using gitHubTest.DataContext;
+using gitHubTest.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace gitHubTest.Controllers
@@ -12,6 +10,7 @@ namespace gitHubTest.Controllers
         /// 로그인
         /// </summary>
         /// <returns></returns>
+        [HttpGet] //default 값이 [HttpGet]이다.
         public IActionResult Login()
         {
             return View();
@@ -26,6 +25,20 @@ namespace gitHubTest.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Register(User model)
+        {
+            if (ModelState.IsValid)
+            {
+                using (var db = new AspnetNoteDBContext())
+                {
+                    db.Users.Add(model); //메모리 상에 추가
+                    db.SaveChanges();
+                }
+                return Redirect("/Account/Register");
+            }
+            return View();
+        }
     }
 }
 
