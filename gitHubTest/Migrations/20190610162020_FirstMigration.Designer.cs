@@ -9,7 +9,7 @@ using gitHubTest.DataContext;
 namespace gitHubTest.Migrations
 {
     [DbContext(typeof(AspnetNoteDBContext))]
-    [Migration("20190608161914_FirstMigration")]
+    [Migration("20190610162020_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

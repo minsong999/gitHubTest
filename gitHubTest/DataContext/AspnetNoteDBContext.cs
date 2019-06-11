@@ -12,7 +12,7 @@ namespace gitHubTest.DataContext
         //connetion 만드는 방법
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost;Database=AspnetNoteDb;User Id=server_minseong;Password=sa1234;");
+            optionsBuilder.UseSqlServer(@"Server=localhost;Database=AspnetNoteDatabase;User Id=minsong999;Password=mmin2010;");
             //connetion string값을 그대로 서버에 보내기 위해서 @를 꼭 앞에 붙여주자
             //Microsoft.EntityFrameworkCore 누겟패키지 추가
             //보기 - other - 패키지 관리자 콘솔창 추가

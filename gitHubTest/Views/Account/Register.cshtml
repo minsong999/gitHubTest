@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model gitHubTest.Models.User;
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -7,28 +8,31 @@
 </head>
 <body>
     <partial name="/Views/DevelopmentRabbit/Contents.cshtml" />
-    <div>
         <h2>회원가입 페이지</h2>
-        <form class="form-group" method="post">
+        <form class="form-group" method="post" asp-controller="Account" asp-action="Register">
             <div class="form-group">
                 <label class="">사용자 ID</label>
-                <input type="text" class="form-control" placeholder="사용자 ID를 입력하세요." />
+                <input type="text" class="form-control" asp-for="UserId" placeholder="사용자 ID를 입력하세요." />
+                <span class="text-danger" asp-validation-for="UserId"></span>
             </div>
 
             <div class="form-group">
                 <label>사용자 비밀번호</label>
-                <input type="text" class="form-control" placeholder="사용자 비밀번호를 입력하세요." />
+                <input type="text" class="form-control" asp-for="UserPassword" placeholder="사용자 비밀번호를 입력하세요." />
+
+                <span class="text-danger" asp-validation-for="UserPassword"></span>
             </div>
 
             <div class="form-group">
                 <label>사용자 이름</label>
-                <input type="text" class="form-control" placeholder="사용자 이름을 입력하세요." />
+                <input type="text" class="form-control" asp-for="UserName" placeholder="사용자 이름을 입력하세요." />
+                <span class="text-danger" asp-validation-for="UserName"></span>
             </div>
-        </form>
-    </div>
+
     <div class="from-group">
         <button type="submit" class="btn btn-primary">회원가입</button>
         <a class="btn btn-warning" href="javascript:void(0);">취소</a>
     </div>
+    </form>
 </body>
 </html>
