@@ -33,7 +33,7 @@ namespace gitHubTest.Controllers
                 using (var db = new AspnetNoteDBContext())
                 {
                     db.Users.Add(model); //메모리 상에 추가
-                    db.SaveChanges(); //실제로 DB에 저장하고 commit
+                    db.SaveChanges(); //실제로 DB에 저장하고 commit 
                 }
                 return RedirectToAction("Register","Account");
             }
