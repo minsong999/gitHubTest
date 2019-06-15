@@ -35,7 +35,7 @@ namespace gitHubTest.Controllers
                     db.Users.Add(model); //메모리 상에 추가
                     db.SaveChanges(); //실제로 DB에 저장하고 commit 
                 }
-                return RedirectToAction("Register","Account");        
+                return RedirectToAction("Register","Account");               
             }
             return View();
         }
