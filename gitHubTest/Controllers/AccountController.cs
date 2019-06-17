@@ -2,6 +2,7 @@
 using gitHubTest.DataContext;
 using gitHubTest.Models;
 using gitHubTest.ViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace gitHubTest.Controllers
@@ -38,6 +39,8 @@ namespace gitHubTest.Controllers
                     if (user != null)
                     {
                         //로그인에 성공했을 때
+                        //HttpContext.Session.SetInt32(key, value);
+                        HttpContext.Session.SetInt32("USER_LOGIN_KEY", user.UserNo);
                         return RedirectToAction("LoignSuccess", "Account"); //로그인에 성공 페이지로 이동
                     }
                 }
@@ -50,9 +53,17 @@ namespace gitHubTest.Controllers
 
         public IActionResult LoignSuccess()
         {
+            //종속성 - Nuget packkage 설치 - Microsoft.AspNetCore.Session 
+            
             return View();
         }
 
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("USER_LOGIN_KEY");
+            return RedirectToAction("Contents", "DevelopmentRabbit");
+            //HttpContext.Session.Clear(); //모든 세션 제거
+        }
 
         /// <summary>
         /// 회원 가입

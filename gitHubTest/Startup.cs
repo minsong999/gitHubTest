@@ -31,8 +31,16 @@ namespace gitHubTest
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            //add framework services.
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            // 미들웨어
+            // Di
+            // Session
+            services.AddSession(); //서비스에 Session을 등록하겠다.
+            // Identity
+            // Web Api 관련 기능
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +57,7 @@ namespace gitHubTest
             }
 
             app.UseHttpsRedirection();
+            app.UseSession(); // application 단위에서 세션을 사용하겠다.
             app.UseStaticFiles();
             app.UseCookiePolicy();
 

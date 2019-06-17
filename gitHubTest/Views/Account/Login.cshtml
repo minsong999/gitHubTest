@@ -1,5 +1,5 @@
 ﻿@model gitHubTest.ViewModel.LoginViewModel;
-
+@using Microsoft.AspNetCore.Http
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,10 +22,16 @@
         </div>
         <div asp-validation-summary="ModelOnly"></div>
         <div class="from-group">
-            <button type="submit" class="btn btn-primary">로그인</button>
-            <a class="btn btn-warning" href="javascript:void(0);">취소</a>
+            @if (Context.Session.GetInt32("USER_LOGIN_KEY") == null)
+            {
+                <button type="submit" class="btn btn-primary">로그인</button>
+                <a class="btn btn-warning" href="javascript:void(0);">취소</a>
+            }
+            else
+            {
+                <li><a asp-area="" asp-controller="Account" asp-action="Logout">로그아웃</a></li>
+            }
         </div>
-
     </form>
 </body>
 </html>
