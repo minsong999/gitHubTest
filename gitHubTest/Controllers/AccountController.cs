@@ -85,7 +85,7 @@ namespace gitHubTest.Controllers
                     db.SaveChanges(); //실제로 DB에 저장하고 commit 
                 }
                 return RedirectToAction("Register","Account");               
-            }
+            }   
             return View();
         }
     }
