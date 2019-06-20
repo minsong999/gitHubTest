@@ -50,6 +50,9 @@
     <Content Update="Views\ConceptJavascript\typeCoericion.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Views\ConceptJavascript\blockingLaungae.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\ConceptJavascript\ValueTypesAndReferenceType.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

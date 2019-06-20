@@ -54,5 +54,9 @@ namespace gitHubTest.Controllers
             return View();
         }
         
+        public IActionResult blockingLanguage()
+        {
+            return View();
+        }
     }
 }
