@@ -109,6 +109,7 @@
     </Content>
     <Content Update="Views\Note\Add.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Update="Views\Note\Edit.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>

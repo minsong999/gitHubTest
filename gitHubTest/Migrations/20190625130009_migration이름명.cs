@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace gitHubTest.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class migration이름명 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,7 +28,7 @@ namespace gitHubTest.Migrations
                 {
                     NoteNo = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    NoticeTitle = table.Column<string>(nullable: false),
+                    NoteTitle = table.Column<string>(nullable: false),
                     NoteContents = table.Column<string>(nullable: false),
                     UserNo = table.Column<int>(nullable: false)
                 },

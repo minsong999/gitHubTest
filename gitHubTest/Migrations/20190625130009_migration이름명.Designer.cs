@@ -9,8 +9,8 @@ using gitHubTest.DataContext;
 namespace gitHubTest.Migrations
 {
     [DbContext(typeof(AspnetNoteDBContext))]
-    [Migration("20190610162020_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20190625130009_migration이름명")]
+    partial class migration이름명
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -29,7 +29,7 @@ namespace gitHubTest.Migrations
                     b.Property<string>("NoteContents")
                         .IsRequired();
 
-                    b.Property<string>("NoticeTitle")
+                    b.Property<string>("NoteTitle")
                         .IsRequired();
 
                     b.Property<int>("UserNo");

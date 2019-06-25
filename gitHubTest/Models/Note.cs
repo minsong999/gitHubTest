@@ -18,22 +18,25 @@ namespace gitHubTest.Models
         /// <summary>
         /// 게시물 제목
         /// </summary>
-        [Required]
-        public string NoticeTitle { get; set; }
+        [Required] // Not Null 설정
+        public string NoteTitle { get; set; }
 
         /// <summary>
         /// 게시물 내용
         /// </summary>
-        [Required]
+        [Required] // Not Null 설정
         public string NoteContents { get; set; }
 
         /// <summary>
         /// 작성자 번호
         /// </summary>
-        [Required]
+        [Required] // Not Null 설정
         public int UserNo { get; set; }
 
+        /// <summary>
+        /// 외래키 설정
+        /// </summary>
         [ForeignKey("UserNo")]
-        public virtual User User { get; set;}
+        public virtual User User { get; set; }
     }
 }

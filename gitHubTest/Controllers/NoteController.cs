@@ -6,22 +6,22 @@ using gitHubTest.DataContext;
 using gitHubTest.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace gitHubTest.Controllers
+namespace AspnetCoreStudy.Controllers
 {
     public class NoteController : Controller
     {
-
         /// <summary>
         /// 게시판 리스트
         /// </summary>
         /// <returns></returns>
         public IActionResult Index()
         {
-            using(var db = new AspnetNoteDBContext())
+            using (var db = new AspnetNoteDBContext())
             {
-                var list = db.Notes.ToList(); //테이블 안의 모든 값을 가져올때 사용
+                var list = db.Notes.ToList();
                 return View(list);
             }
+
         }
 
         /// <summary>
@@ -30,6 +30,28 @@ namespace gitHubTest.Controllers
         /// <returns></returns>
         public IActionResult Add()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Add(Note model)
+        {
+            if (ModelState.IsValid)
+            {
+                using (var db = new AspnetNoteDBContext())
+                {
+                    db.Notes.Add(model);
+                    if (db.SaveChanges() > 0)
+                    {
+                        return Redirect("index"); // 동일한 컨드롤일경우 
+                    }
+
+
+                }
+
+                ModelState.AddModelError(string.Empty, "게시물을 저장할 수 없습니다.");
+            }
+
             return View();
         }
 
@@ -42,6 +64,10 @@ namespace gitHubTest.Controllers
             return View();
         }
 
+        /// <summary>
+        /// 게시물 삭제
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Delete()
         {
             return View();

@@ -27,7 +27,7 @@ namespace gitHubTest.Migrations
                     b.Property<string>("NoteContents")
                         .IsRequired();
 
-                    b.Property<string>("NoticeTitle")
+                    b.Property<string>("NoteTitle")
                         .IsRequired();
 
                     b.Property<int>("UserNo");
