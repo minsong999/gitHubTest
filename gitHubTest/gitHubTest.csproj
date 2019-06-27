@@ -32,6 +32,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\ConceptJavascript\settimeoutAndsetintervalAndrequestanimationframe.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\ConceptJavascript\IIFEAndModules.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

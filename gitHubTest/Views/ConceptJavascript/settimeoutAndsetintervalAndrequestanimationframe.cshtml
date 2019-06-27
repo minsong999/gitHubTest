@@ -1,0 +1,16 @@
+﻿<div><h1>10. settimeoutAndsetintervalAndrequestanimationframe</h1></div>
+
+<div>
+    const helloT=setTimeout(console.log, 1000, "Hi"); <!--큐에 담아뒀다가 최소 지연 시간 이후 스택이 비면 실행-->
+    clearTimeout(helloT);
+
+    const helloT=setInterval(console.log, 5000, "Hello"); <!-- 크롬은 인터벌이 1초보다 짧다면 1초로 맞춤-->
+    clearInterval(helloT);
+
+    const sayHi = () => {
+        console.log("hi");
+        requestAnimationFrame(sayHi);
+    };
+
+    requestAnimationFrame(sayHi);
+</div>
